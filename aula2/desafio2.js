@@ -65,18 +65,21 @@ Crie uma função com as seguintes características:
 6. E ainda, se nenhuma das condições acima forem atendidas, retorne `null`.
 */
 function finalFunction(arg1, arg2, arg3) {
-  if(arg1 === undefined && arg2 === undefined && arg3 == undefined){
-    return false
-  } else if(arg1 !== undefined && arg2 === undefined && arg3 == undefined) {
+  if(arg1 !== undefined && arg2 === undefined && arg3 == undefined) {
     return arg1;
   } else if(arg1 !== undefined && arg2 !== undefined && arg3 === undefined) {
     return arg1 + arg2;
   } else if(arg1 !== undefined || arg2 !== undefined || arg3 !== undefined) {
     return (arg1 + arg2) / arg3
+  } else if(arg1 === undefined && arg2 === undefined && arg3 == undefined){
+    return false
+  } else {
+    return null
   }
-
-  return null
 }
 
 // Invoque a função acima utilizando todas as possibilidades (com nenhum argumento, com um, com dois e com três.) Coloque um comentário de linha ao lado da função com o resultado de cada invocação.
-?
+finalFunction() //false
+finalFunction(5)//5
+finalFunction(1,2)//3
+finalFunction(1,2,3)//1
