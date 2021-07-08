@@ -66,3 +66,13 @@ myFunction2(arg)// Javascript Ninja
 Caso eu passe o objeto no argumento, eu posso ver as propriedades quando chamo a funcao
 
 myFunction2(obj).ninja // true
+
+Ponto interessante
+var arr = [1, 2, 3] é a mesma coisa praticamente que isso
+var arr = {
+  "0": 1,
+  "1": 2,
+  "2": 3
+}
+
+posso acessar ele assim arr["1"] ou da forma tradicional arr[1] // 2
