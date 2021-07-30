@@ -145,3 +145,28 @@ arr.forEach(function(item){
 })
 
 console.log(sum) //28
+
+<<<<<<<<<<<<<<<<<<< método Every() >>>>>>>>>>>>>>>>>>>
+Ele é o predicado do Array
+Ele vai aplicar uma funcao e o retorno dela,
+que vai ser baseado no retorno da funcao que passar pro parametro,
+vai ser true ou false
+
+var arr = [1, 2, 3, 4, 5, 6, 7];
+
+var every = arr.every(function(item) {
+  console.log(item);
+  return item < 5;
+})
+
+console.log(every) // false
+retornou false pq nem todos itens são menores do que 5, para retornar true todos deveriam ser menores do que 5.
+
+var every2 = arr.every(function(item) {
+  return item < 8;
+})
+
+console.log(every2) //true
+
+basicamente, vamos usar o every para testar itens do array para verificar se sao divisíveis por dois, se são pares, se sao maiores que algum número, para verificar se é true ou false
+
