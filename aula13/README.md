@@ -170,3 +170,14 @@ console.log(every2) //true
 
 basicamente, vamos usar o every para testar itens do array para verificar se sao divisíveis por dois, se são pares, se sao maiores que algum número, para verificar se é true ou false
 
+<<<<<<<<<<<<<<< metodo some() >>>>>>>>>>>>>>>
+Ele faz o que o método every faz, só que para alguns elementos. Ou seja, se ao menos algum dos elementos do array for true, ele vai retornar true!
+
+var arr = [1, 2, 3, 4, 5, 6, 7];
+
+var some = arr.some(function(item) {
+  console.log(item);
+  return item < 5;
+})
+
+console.log(some) // true
