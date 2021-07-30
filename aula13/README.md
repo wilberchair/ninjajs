@@ -67,3 +67,38 @@ Consigo usar também valores negativos
 arr.slice(-2) //[4, 5]
 Basicamente o que ele faz é olhar para o arr.length // 5 e 5 - 2 = 3
 Ele identifica o 3 item do array e conta a partir daí
+
+<<<<<<<<<<<<< metodo splice() >>>>>>>>>>>>>
+O Splice modifica o array principal! ele pode tanto adicionar com remover itens do array
+
+arr.splice()
+O primeiro parametro vai especificar o indice onde deve ocorrer a remocão ou adicao dos indices do array
+
+arr.splice(3) //[4, 5]
+Esses foram removidos do array principal, agora o array só tem 3 indices
+arr // [1, 2, 3]
+
+Se eu usar apenas um parâmetro é isso que ele vai fazer
+
+O segundo parametro e´ a quantidade de itens que vou remover
+
+agora se eu quiser determinar de onde começo a remover uso os dois parametros
+
+arr.splice(1, 3) // [2, 2, 4]
+arr //[1, 5]
+
+Agora se eu quiser adicionar
+o 1 é a partir do primeiro indice que quero que comece
+0 é que nao quero remover nenhum
+e o terceiro parametro é o que eu vou adicionar no array
+arr.splice(1, 0, 'a')
+arr //[1, 'a', 5]
+
+o 5 é o indice 2 e eu quero que adicione as letra b c e d a partir dali
+arr.splice(2, 0, 'b', 'c', 'd')
+arr // [1, 'a', 'b', 'c', 'd', 5]
+
+agora se eu quiser remover essas letras que coloquei e trazer os números de volta
+
+a partir do 1 indice, ele remove 4, e acrescenta 2 e 3
+arr.splice(1, 4, 2, 3) // [1, 2, 3, 4, 5]
