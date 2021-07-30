@@ -102,3 +102,5 @@ agora se eu quiser remover essas letras que coloquei e trazer os números de vol
 
 a partir do 1 indice, ele remove 4, e acrescenta 2 e 3
 arr.splice(1, 4, 2, 3) // [1, 2, 3, 4, 5]
+
+<<<<<<<<<<<<<< metodo forEach() >>>>>>>>>>>>>>
