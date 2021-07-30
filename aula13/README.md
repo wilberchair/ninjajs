@@ -104,3 +104,44 @@ a partir do 1 indice, ele remove 4, e acrescenta 2 e 3
 arr.splice(1, 4, 2, 3) // [1, 2, 3, 4, 5]
 
 <<<<<<<<<<<<<< metodo forEach() >>>>>>>>>>>>>>
+forEach é uma estrutura de repeticao, parecido com o for,
+mas funciona de uma forma mais elegante
+posso usar 3 parametros, 
+item do array
+indice do array
+o proprio array
+
+var arr = [1, 2, 3, 4, 5, 6, 7];
+arr.forEach(function(item, index, array){
+  console.log(item, index, array);
+})
+
+resposta do console
+1 0 [1, 2, 3, 4, 5, 6, 7]
+2 1 [1, 2, 3, 4, 5, 6, 7]
+3 2 [1, 2, 3, 4, 5, 6, 7]
+4 3 [1, 2, 3, 4, 5, 6, 7]
+5 4 [1, 2, 3, 4, 5, 6, 7]
+6 5 [1, 2, 3, 4, 5, 6, 7]
+7 6 [1, 2, 3, 4, 5, 6, 7]
+
+mais simples do que usar um for
+se fosse fazer com um for:
+
+for(var i = 0; i < arr.length; i++) {
+  console.log(arr[i], i, arr);
+}
+
+O forEach é mais rápido que o for
+
+se eu nao quiser saber o indice ou o array posso usar apenas o item
+
+Só passo os parametros que quero usar que o js irá ignorar
+
+var arr = [1, 2, 3, 4, 5, 6, 7];
+var sum = 0;
+arr.forEach(function(item){
+  sum += item;
+})
+
+console.log(sum) //28
