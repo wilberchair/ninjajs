@@ -33,3 +33,37 @@ o que posso fazer com o concat? Posso unir um novo array por ex
 arr.concat([6,7,8,9]) // [1, 2, 3, 4, 5, 6, 7, 8, 9]
 arr.concat([6,7,8,9], [10, 11, 12]) // [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
 arr //[1, 2, 3, 4]
+
+<<<<<<<<<<<< método unshift() >>>>>>>>>>>>
+Se eu der um arr.push() ele irá modificar o array adicionando um novo item
+
+arr.push(5) // [1, 2, 3, 4, 5]
+arr.length //5
+
+O unshift() irá adicionar um novo item no array só que no início do array
+
+arr.unshift(0) // [0, 1, 2, 3, 4, 5]
+
+<<<<<<<<<<<<<<<<< medoto shift() >>>>>>>>>>>>>>>>>
+remove o primeiro item do array
+
+arr.shift() // [1, 2, 3, 4, 5]
+
+<<<<<<<<<<<<<<<<<<<<< metodo slice() >>>>>>>>>>>>>>>>>>>>>
+O slice retorna um pedaço do array que a gente seleciona
+Ele nao altera o array, retorna um novo array
+arr // [1, 2, 3, 4, 5]
+
+O slice tem 2 parametros, o primeiro é o índice de onde vou começar
+ar.slice(1) //[2, 3, 4, 5]
+ar.slice(0)) //[1, 2, 3, 4, 5]
+O segundo parametro é ate onde eu quero que o slice vá
+Ele vai até o segundo índice mas sem mostrar ele
+ar.slice(0, 2)) //[1, 2]
+
+ar.slice(1, 4)) //[2, 3, 4]
+
+Consigo usar também valores negativos
+arr.slice(-2) //[4, 5]
+Basicamente o que ele faz é olhar para o arr.length // 5 e 5 - 2 = 3
+Ele identifica o 3 item do array e conta a partir daí
