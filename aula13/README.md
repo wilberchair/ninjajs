@@ -227,3 +227,38 @@ arr.forEach(function(item, index, array){
 });
 
 Usamos o forEach quando queremos iterar pelo array e fazer alguma ação com ele, e o map quando vc quiser iterar pelo array gerando um novo array
+
+<<<<<<<<<<<<< metodo filter() >>>>>>>>>>>>>
+Ele filtra os itens do array, vai gerar um novo arrray, não modifica o array principal
+
+
+var arr = [1, 2, 3, 4, 5];
+var map = arr.filter(function(item, index, array) {
+  return item > 2;
+})
+
+console.log(filter); //[3, 4, 5]
+
+conseguimos utilizar o map e o filter juntos caso queira
+
+var arr = [1, 2, 3, 4, 5];
+var map = arr.map(function(item){
+  return item + 10;
+});
+
+var filter = map.filter(function(item){
+  return item > 13
+});
+
+console.log(filter); //[14, 15]
+
+OU.. eu poderia encadear os dois métodos juntos
+
+var arr = [1, 2, 3, 4, 5];
+var map = arr.map(function(item){
+  return item + 10;
+}).filter(function(item){
+  return item > 13
+});
+
+console.log(map); //[14, 15]
