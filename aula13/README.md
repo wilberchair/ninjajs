@@ -181,3 +181,49 @@ var some = arr.some(function(item) {
 })
 
 console.log(some) // true
+
+<<<<<<<<<<<<<<< metodo map() >>>>>>>>>>>>>>>
+Ele percorre por todo o array, mas ele retorna um novo array.
+os parametros que ele recebe sao os mesmos que o forEach = item, index e array
+
+No retorno dele eu posso retornar só o item ou mais parâmetros
+
+var arr = [1, 2, 3, 4, 5, 6, 7];
+var map = arr.map(function(item, index, array) {
+  return item;
+})
+
+aqui vemos que os dois arrays estao iguais
+console.log(arr, map) //[1, 2, 3, 4, 5] [1, 2, 3, 4, 5]
+
+Aqui podemos fazer uma mudança, fazendo todo item retornar somando + 1
+
+var arr = [1, 2, 3, 4, 5, 6, 7];
+var map = arr.map(function(item, index, array) {
+  return item + 1;
+})
+
+console.log(arr, map) //[1, 2, 3, 4, 5] [2, 3, 4, 5, 6]
+
+Posso retornar um objeto se eu quiser por ex
+
+var arr = [1, 2, 3, 4, 5, 6, 7];
+var map = arr.map(function(item, index, array) {
+  return {index: index, item: item};
+})
+
+retorno:
+{index: 1, item: 1}
+{index: 2, item: 2}
+{index: 3, item: 3}
+....
+
+A diferença entre o map e o forEach é que o map ele já devolve um array pra vc, o forEach vc tem que iterar o array e passar um valor pra ele.
+
+se fossemos fazer com forEach:
+var newArr = [];
+arr.forEach(function(item, index, array){
+  newArr.push({index: index, item: item})
+});
+
+Usamos o forEach quando queremos iterar pelo array e fazer alguma ação com ele, e o map quando vc quiser iterar pelo array gerando um novo array
