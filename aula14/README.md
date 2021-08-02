@@ -47,3 +47,30 @@ Se eu usar por ex o array com meu nome, ele irá inverter meu nome, parecido com
 Se estivermos utilizando números também irá fazer o cálculo ao contrário
 
 <<<<<<<<<<< método indexOf() >>>>>>>>>>>
+O indexOf procura se o valor existe no array
+Ex
+var arr = [1, 2, 3, 4, 5]
+console.log(arr.indexOf(3)); //2
+
+Ele encontrou o número 3 no array, e ele retorna a posição do índice, a posição exata dele no índice do array
+como vemos, o 3 está na posição 2 do array
+
+Se o índice não existir ele retorna -1
+Ex
+console.log(arr.indexOf(6)) // -1
+
+Em um exemplo de array com strings, vai ser a mesma coisa, se não existir vai retornar -1, e se existir vai
+retornar a posição do array da string
+
+O indexOf tem um segundo parâmetro que podemos passar, que é exatamente onde o indexOf deve iniciar a busca
+
+var arr = ['W', 'i', 'l', 'b', 'e', 'r']
+Ex console.log(arr.indexOf('i', 2)) // -1
+
+O segundo parâmetro você usa só se quiser procurar a partir de determinado ponto
+
+Posso fazer uma comparacao também para retornar true
+console.log(arr.indexOf('i') > -1) //true
+console.log(arr.indexOf('i') === -1) //false
+aqui conseguimos saber se o item existe ou não.. se for true ele existe, senao false
+Se ele for maior ou igual a zero ele existe, então retorna true, senão retorna false 
