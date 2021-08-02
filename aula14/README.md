@@ -74,3 +74,17 @@ console.log(arr.indexOf('i') > -1) //true
 console.log(arr.indexOf('i') === -1) //false
 aqui conseguimos saber se o item existe ou não.. se for true ele existe, senao false
 Se ele for maior ou igual a zero ele existe, então retorna true, senão retorna false 
+
+<<<<<<<<<<<<<<<<<<<< metodo lastIndexOf() >>>>>>>>>>>>>>>>>>>>
+Ele faz a mesma coisa que o indexOf, só que ele se inicia pelo final
+
+var arr = ['W', 'i', 'l', 'b', 'e', 'r']
+Ex console.log(arr.lastIndexOf('b', 2)) // -1
+Retornou false pq ele começou a contar a partir do indice 2 até o zero, entao ele nao encontra a letra B
+
+se eu colocasse o numero 3 ele encontraria.
+
+E se eu nao usar um segundo parametro, ele vai encontrar o indice retornando a letra
+console.log(arr.lastIndexOf('b')) // 3
+
+<<<<<<<<<<<<<<< metodo isArray() >>>>>>>>>>>>>>>
