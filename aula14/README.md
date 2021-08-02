@@ -41,3 +41,9 @@ O every e o some fazem algo parecido com o reduce também, mas ele retornam true
 eles não passem por todos os itens do array, já o reduce vai passar por todos
 
 <<<<<<<<<<<<<<<<< método reduceRight >>>>>>>>>>>>>>>>>
+O reduceRight faz a mesma coisa do reduce, mas da direita pra esquerda
+
+Se eu usar por ex o array com meu nome, ele irá inverter meu nome, parecido com o reverse
+Se estivermos utilizando números também irá fazer o cálculo ao contrário
+
+<<<<<<<<<<< método indexOf() >>>>>>>>>>>
