@@ -78,7 +78,7 @@ Se ele for maior ou igual a zero ele existe, então retorna true, senão retorna
 <<<<<<<<<<<<<<<<<<<< metodo lastIndexOf() >>>>>>>>>>>>>>>>>>>>
 Ele faz a mesma coisa que o indexOf, só que ele se inicia pelo final
 
-var arr = ['W', 'i', 'l', 'b', 'e', 'r']
+var arr = ['W', 'i', 'l', 'b', 'e', 'r'];
 Ex console.log(arr.lastIndexOf('b', 2)) // -1
 Retornou false pq ele começou a contar a partir do indice 2 até o zero, entao ele nao encontra a letra B
 
@@ -88,3 +88,16 @@ E se eu nao usar um segundo parametro, ele vai encontrar o indice retornando a l
 console.log(arr.lastIndexOf('b')) // 3
 
 <<<<<<<<<<<<<<< metodo isArray() >>>>>>>>>>>>>>>
+Serve pra verificar se o array existe ou nao!
+Ex:
+var arr = ['W', 'i', 'l', 'b', 'e', 'r'];
+console.log(Array.isArray(arr)); //true
+
+Se eu usar um typeOf por ex, ele só vai retornar que é um objeto
+console.log(typeof arr)); //object
+
+console.log(typeof arr === 'array'); //false
+
+se eu usar o typeof não consigo fazer essa verificação pq ele vai retornar objeto tanto para
+object quanto para array. Com o typeof consigo verificar se é uma string, boolean, function, number ou até um objeto,
+mas para arrays não funciona.
