@@ -26,3 +26,18 @@ segunda entrada: 1 + 2 = 3
 terceira entrada: 3 + 3 = 6
 quarta entrada: 6 + 4 = 10
 quinta entrada: 10 + 5 = 15
+
+Se eu nao usar o valor 0 ele utiliza o primeiro valor do array e o segundo. O primeiro vira o acumulado, e o segundo o atual, no caso o num 1 acumulado, 2 atual
+
+Não é obrigado passar um valor, mas em alguns momentos vai precisar
+
+consigo usar com strings também o reduce
+
+caso eu tenha uma string como por ex essa: ['W', 'i', 'l', 'b', 'e', 'r']
+no final ele tem que trazer meu nome concatenado //Wilber
+
+Ele faz basicamente o que o join faz. Mas o join se eu usar números ele vai concatenar, vai juntar eles
+O every e o some fazem algo parecido com o reduce também, mas ele retornam true ou false, e pode ser que
+eles não passem por todos os itens do array, já o reduce vai passar por todos
+
+<<<<<<<<<<<<<<<<< método reduceRight >>>>>>>>>>>>>>>>>
