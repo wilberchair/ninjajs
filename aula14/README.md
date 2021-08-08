@@ -88,7 +88,7 @@ E se eu nao usar um segundo parametro, ele vai encontrar o indice retornando a l
 console.log(arr.lastIndexOf('b')) // 3
 
 <<<<<<<<<<<<<<< metodo isArray() >>>>>>>>>>>>>>>
-Serve pra verificar se o array existe ou nao!
+Serve pra verificar se o array existe ou nao! 
 Ex:
 var arr = ['W', 'i', 'l', 'b', 'e', 'r'];
 console.log(Array.isArray(arr)); //true
