@@ -126,5 +126,5 @@ inclusive nao posso colocar como argumento da funcao a palavra arguments, senão
 Não devemos usar palavras reservadas para funcoes ou argumentos
 
 Caso eu queira fazer encadeamento de funcoes posso fazer desta forma:
-
+Podemos usar desde que a gente retorne o objeto (this)
 console.log(mari.getFullName() + ' agora tem ' + mari.addAge(2).getAge() + ' anos')
