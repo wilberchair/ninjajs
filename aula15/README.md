@@ -124,3 +124,7 @@ inclusive nao posso colocar como argumento da funcao a palavra arguments, senão
 })() //[1]
 
 Não devemos usar palavras reservadas para funcoes ou argumentos
+
+Caso eu queira fazer encadeamento de funcoes posso fazer desta forma:
+
+console.log(mari.getFullName() + ' agora tem ' + mari.addAge(2).getAge() + ' anos')
