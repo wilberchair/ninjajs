@@ -22,3 +22,78 @@ Ela nao vai fazer nada.. apenas indicar para o browser que o conteúdo a partir 
 console.log(myName) //irá lançar o erro de referenceError no console, mas irá apontar para a linha 3, dentro da funcao onde eu declarei a variável sem o var
 
 Se eu utilizasse o 'use strict' fora da funcao, ele funcionaria para todo o escopo.
+
+<<<<<<<<<<<<<<<<<<<< uso do with>>>>>>>>>>>>>>>>>>>>
+como vimos, o use strict nao permite criar variáveis sem o var, e ele nao permite também usar o with
+
+O with serve para diminuir o tamanho de um objeto
+
+ex:
+(function(){
+  var obj = {
+    prop1: {
+      prop2: {
+        prop3: {
+          prop31: 'prop31';
+          prop32: 'prop32';
+          prop33: 'prop33';
+        }
+      }
+    }
+  }
+})();
+console.log(obj.prop1.prop2.prop3);
+
+Para eu acessar esses elementos sem precisar ficar repetindo
+na hora de eu chamar as propriedades desse objeto não precisarei ficar repetindo toda essa instrução
+with(obj.prop1.prop2.prop3) {
+  console.log(prop31, prop32, prop33); //prop31, prop32, prop33
+}
+
+As variáveis que eu chamar dentro do with saberao que são baseadas nesse objeto
+
+se eu tivesse que chamar normalmente essas variáveis, eu teria que fazer o console 3x
+console.log(obj.prop1.prop2.prop3.prop31);
+console.log(obj.prop1.prop2.prop3.prop32);
+console.log(obj.prop1.prop2.prop3.prop33);
+
+Mas o with pode acabar se confundindo com variáveis fora do escopo, então por isso o with não é permitido dentro do strict
+
+Se utilizarmos o use strict irá lançar uma syntaxError, onde mostrará que o código nao poderá ser incluído com with statement
+
+
+No escopo global, com o strict o this dentro de funções é igual a undefined
+this === undefined
+
+o this aponta para window no escopo global
+
+(function(){
+    'use strict';
+    console.log(this) //undefined
+})()
+
+Se eu criar um objeto e usar o this como referência, com o use strict ele nao irá permitir que eu instancie um objeto sem a palavra new, vai lançar um erro no console
+(function(){
+    'use strict';
+    function Person(name, lastName, age) {
+      this.name = name;
+      this.lastName = lastName;
+      this.age = age;
+    }
+    console.log( Person( 'Wilber', 'Lima', 34 ) )
+})()
+console.log( name, lastName, age );
+
+Se eu chamar o objeto Person como uma funcao, sem o strict, ele vai trazer no console que person é undefined, mas se pesquisarmos name, lastName ou age, eles estarao disponíveis no escopo glogal
+
+o console de baixo conseguirá acessar tudo
+
+mas se eu uso a palavra new para instanciar Person, ai sim o console de fora não irá conseguir acessar o objeto
+
+Se eu nao instanciar é como se o this fosse o window.name, window.lastName....
+
+Então o use strict ajuda nesse aspecto também, caso não utilize a palavra new, dará erro
+
+Se eu der um console.log no this dentro da funcao, com o strict, ele será undefined, inclusive se eu fizer a comparacao this === undefined //true
+
+Entao em resumo o with faz com que o this se torne undefined para nao ficar pendurado no escopo global!
