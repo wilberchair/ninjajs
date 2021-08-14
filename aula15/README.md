@@ -89,7 +89,38 @@ se eu nao usar o new, chamando direto o MyConstructor() como funcao
  e der um console em prop1, ele vai retornar o valor 'prop1', por que como chamei essa funcao como uma funcao normal, e nao intanciei, vai pendurar o prop1 no window, o this representará o escopo global
 
  <<<<<<<<<<<< arguments >>>>>>>>>>>>
-
+Objeto arguments
+Ele é um objeto array like, pq ele é parecido com um array, funciona como um array mas não é um array e ele aparece implicitamente dentro de funções
  
+ podemos usar ele para receber varios argumentos de uma funcao... ex
+ (function() {
+  function myFcuntion(arg1, arg2) {
+    return arguments;
+  }
+  console.log('ARGUMENTS', myFcuntion(1, 2))
+})() //[1, 2]
 
+Ele retorna como se fosse um array, mas nao é um array
+E podemos também acessá-los da mesma forma como se fosse um array: arguments[0]
 
+Posso inclusive nem passar argumentos para a funcao, mas no momento de chamar a funcao,
+passando os argumentos consigo mostrar o resultado de cada indice, e se eu colocar um indice
+que nao existe irá retornar undefined
+
+(function() {
+  function myFcuntion() {
+    return arguments[1];
+  }
+  console.log('ARGUMENTS', myFcuntion(1, 2))
+})() //[2]
+
+inclusive nao posso colocar como argumento da funcao a palavra arguments, senão irá sobrescrever o arguments que está no retorno da funcao, e no caso de cima, ele retornaria o numero 1
+
+(function() {
+  function myFcuntion(arguments) {
+    return arguments;
+  }
+  console.log('ARGUMENTS', myFcuntion(1, 2))
+})() //[1]
+
+Não devemos usar palavras reservadas para funcoes ou argumentos
