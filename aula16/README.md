@@ -97,3 +97,30 @@ Então o use strict ajuda nesse aspecto também, caso não utilize a palavra new
 Se eu der um console.log no this dentro da funcao, com o strict, ele será undefined, inclusive se eu fizer a comparacao this === undefined //true
 
 Entao em resumo o with faz com que o this se torne undefined para nao ficar pendurado no escopo global!
+
+<<<<<<<<<<<< operador delete >>>>>>>>>>>>
+
+Ele lança uma sintaxe de erro se nao puder deletar
+O delete nao pode ser usado em alguns momentos
+
+(function(){
+  var myVar = 2;
+  var obj = {
+    prop1 = prop1;
+    prop2 = prop2;
+    prop3 = prop3;
+  };
+  console.log(delete prop1, obj) //vai retornar true e como estou chamando no console o obj, irá mostrar o obj sem a prop1
+})
+
+Mas se eu tentar deletar a variável myVar ele retornará false
+
+E se estivermos no modo estrito, lançará uma mensagem de erro dizendo que o Delete não é qualificado no modo strict
+
+Se eu nao estiver no modo strict ele nao irá deletar, ele só retorna false e o objeto continua lá
+
+Resumindo O delete serve para deletar propriedades de objetos!!!
+
+Ele não deleta qualqeu coisa que não seja propriedade de obj, nao vai deletar objeto, variáveis ou coisas do tipo
+
+<<<<<<<<<<<<<<<<<< Objetos >>>>>>>>>>>>>>>>>>
