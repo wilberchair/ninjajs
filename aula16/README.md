@@ -124,3 +124,9 @@ Resumindo O delete serve para deletar propriedades de objetos!!!
 Ele não deleta qualqeu coisa que não seja propriedade de obj, nao vai deletar objeto, variáveis ou coisas do tipo
 
 <<<<<<<<<<<<<<<<<< Objetos >>>>>>>>>>>>>>>>>>
+
+Mesmo sendo óbvio, propriedades de objetos nao devem ter o mesmo nome, pois se eu chamar 2 com o mesmo nome por ex, ele só irá ler a ultima, sobrescrevendo a primeira
+
+No modo strict ele lançará um erro avisando que não é permitido
+
+<<<<<<<<<<<<<<<<<<< Funcoes >>>>>>>>>>>>>>>>>>>
