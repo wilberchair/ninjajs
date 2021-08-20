@@ -130,3 +130,13 @@ Mesmo sendo óbvio, propriedades de objetos nao devem ter o mesmo nome, pois se 
 No modo strict ele lançará um erro avisando que não é permitido
 
 <<<<<<<<<<<<<<<<<<< Funcoes >>>>>>>>>>>>>>>>>>>
+Argumentos de funcoes também nao devem ter nomes iguais
+(function(){
+  'use strict';
+  function myFunction(a, a, b) {
+    return a + b;
+  }
+  console.log(myFunction(1, 2, 3)) //5 ele ignorou o primeiro parâmetro
+})()
+
+Usando o modo strict lança um erro no console avisando que nao pode ter parâmetros duplicados
