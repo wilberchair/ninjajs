@@ -140,3 +140,15 @@ Argumentos de funcoes também nao devem ter nomes iguais
 })()
 
 Usando o modo strict lança um erro no console avisando que nao pode ter parâmetros duplicados
+
+<<<<<<<<<<<<<<< Object string >>>>>>>>>>>>>>>
+Faz exatamente o que faz o length do array, conta a quantidade de caracteres de uma string
+
+(function(){
+   'use strict'
+   console.log('Wilber'.length)
+})()
+
+Quando fazemos isso é como se eu usasse o objeto construtor String
+var wil = new String('Wilber')
+wil.length // 6 
