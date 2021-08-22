@@ -168,9 +168,23 @@ funciona como notacao de array também: 'Wilber'[0] //W
 A string é como um array like, tem algumas coisas do array como o length e podemos usar a sintaxe de array pra pegar os valores da string num índice específico
 Se eu colocar um índice que nao existe no charAt ele retornará uma string vazia
 
-<<<<<<<<<<<<<<<<<<<<< método concat >>>>>>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<<< Método concat >>>>>>>>>>>>>>>>>>>>>
 .concat(str1, str2, ..., strN)
 Ele funciona igual o array, irá concatenar
 'Wilber'.concat(' Lima', ' amo', ' minha', ' familia') // Wilber Lima amo minha familia
 
 Obs: ele nao modifica a string principal, ele cria uma nova string
+
+<<<<<<<<<<<<<<<<< método IndexOf >>>>>>>>>>>>>>>>>
+.indexOf(string, [, start])
+Nos arrays ele pega o índice. Ele verifica o indice da string no array. No caso da string é a mesma coisa
+
+posso passar um valor inicial também que ele vai contar, nao é obrigatório
+
+var wil = 'wilber'
+wil.indexOf('l') // 2
+wil.indexOf('z') // -1
+esse -1 é pq nao existe esse valor na string
+wil.indexOf('ber') // 3 pq p B começa no índice 3
+
+<<<<<<<<<<<<<<<<<< lastIndexOf >>>>>>>>>>>>>>>>>>
