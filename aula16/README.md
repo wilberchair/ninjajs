@@ -201,3 +201,30 @@ wil.replace('w', 'z') // zilber (se hovesse mais w ele trocaria apenas a primeir
 Ele nao altera a string original, mas cria uma nova
 
 <<<<<<<<<<<<<<<<<<<<< Método slice >>>>>>>>>>>>>>>>>>>>>
+.slice(start, [, end])
+funciona exatamente como no array, vai ter indice inicial e indice final
+
+Ex:
+var wil = 'wilber'
+wil.slice(3) //ber
+wil.slice(3, 5) //be
+
+E como nos outros, a string principal nao é modificada
+
+<<<<<<<<<<<<<<< split >>>>>>>>>>>>>>>
+recebe 2 parametros, um separador e outro delimitador
+.split([separator], [, limit])
+
+var wil = 'wilber'
+wil.split() // [wilber] // se eu nao colocar nada, o split vai transformar minha string num array
+
+wil.split('l') // ['wi', 'ber'] //na letra que eu escolhi ele fará a divisao e removerá ela
+
+Podemos lembrar que temos o método join, que junta o array, e posso juntar novamente esse array com a letra L onde separei
+
+wil.join('l') // wilber
+
+Para fazer o replace trocando varias letras, como vimos antes que não podia, utilizando o split com o join isso é possível!
+
+var mari = 'mariana'
+mari.split('a').join('b') //mbribnb
