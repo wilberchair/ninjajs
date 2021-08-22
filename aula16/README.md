@@ -154,3 +154,16 @@ var wil = new String('Wilber')
 wil.length // 6 
 
 Ele usa o String como wrapper object. Ele faz o wrapper na string, transformando em objeto, e daí o objeto 'Wilber' tem a propriedade length
+
+<<<<<<<<<<<<<<<<<<< Object charAt >>>>>>>>>>>>>>>>>>>
+charAt é um método de string
+Ele diz qual é o caractere no indice que eu passar. Ele tem o índice como parâmetro
+
+.charAt(index)
+
+Ex:
+'Wilber'.charAt(0) // 'W'
+funciona como notacao de array também: 'Wilber'[0] //W
+
+A string é como um array like, tem algumas coisas do array como o length e podemos usar a sintaxe de array pra pegar os valores da string num índice específico
+Se eu colocar um índice que nao existe no charAt ele retornará uma string vazia
