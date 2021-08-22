@@ -167,3 +167,10 @@ funciona como notacao de array também: 'Wilber'[0] //W
 
 A string é como um array like, tem algumas coisas do array como o length e podemos usar a sintaxe de array pra pegar os valores da string num índice específico
 Se eu colocar um índice que nao existe no charAt ele retornará uma string vazia
+
+<<<<<<<<<<<<<<<<<<<<< método concat >>>>>>>>>>>>>>>>>>>>>
+.concat(str1, str2, ..., strN)
+Ele funciona igual o array, irá concatenar
+'Wilber'.concat(' Lima', ' amo', ' minha', ' familia') // Wilber Lima amo minha familia
+
+Obs: ele nao modifica a string principal, ele cria uma nova string
