@@ -248,6 +248,4 @@ o toLowerCase irá transformar o array em letras minúsculas e o toUpperCase tod
 
 Para brincar um pouco com os métodos, eu posso transformar a primeira letra em maiúsculo
 wil.toLowerCase()
-var newWil = wil.charAt(0).toUpperCase()
-
-<<<<<<<<<<<<<<>>>>>>>>>>>>>>
+var newWil = wil.charAt(0).toUpperCase() + wil.slice(1) // Wilber
