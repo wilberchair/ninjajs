@@ -188,3 +188,16 @@ esse -1 é pq nao existe esse valor na string
 wil.indexOf('ber') // 3 pq p B começa no índice 3
 
 <<<<<<<<<<<<<<<<<< lastIndexOf >>>>>>>>>>>>>>>>>>
+Funciona exatamente como o index of, mas buscando de trás pra frente
+
+.indexOf(string, [, start])
+
+<<<<<<<<<<<<<< Replace >>>>>>>>>>>>>>
+.replace(string, newString)
+
+Substitui um trecho da string por uma nova string
+var wil = 'wilber'
+wil.replace('w', 'z') // zilber (se hovesse mais w ele trocaria apenas a primeira)
+Ele nao altera a string original, mas cria uma nova
+
+<<<<<<<<<<<<<<<<<<<<< Método slice >>>>>>>>>>>>>>>>>>>>>
