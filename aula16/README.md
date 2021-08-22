@@ -228,3 +228,26 @@ Para fazer o replace trocando varias letras, como vimos antes que não podia, ut
 
 var mari = 'mariana'
 mari.split('a').join('b') //mbribnb
+
+<<<<<<<<<<<<<<<<<< substring >>>>>>>>>>>>>>>>>>
+.substring(start, [, end])
+faz basicamente o mesmo que o slice
+
+var wil = 'wilber'
+wil.substring(3) //ber
+wil.substring(3, 5) //be
+
+a única diferença é que se eu inverter os números, se o num inicial for maior que o final, ele conseguirá
+pegar do indice final ate o inicial
+ wil.substring(5, 1) //"ilbe"
+
+ é como se fosse um lastIndexOf do indexOf
+
+ <<<<<<<<<<<<<<< toLowerCase e toUpperCase >>>>>>>>>>>>>>>
+o toLowerCase irá transformar o array em letras minúsculas e o toUpperCase todas em maiúsculas
+
+Para brincar um pouco com os métodos, eu posso transformar a primeira letra em maiúsculo
+wil.toLowerCase()
+var newWil = wil.charAt(0).toUpperCase()
+
+<<<<<<<<<<<<<<>>>>>>>>>>>>>>
