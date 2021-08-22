@@ -152,3 +152,5 @@ Faz exatamente o que faz o length do array, conta a quantidade de caracteres de 
 Quando fazemos isso é como se eu usasse o objeto construtor String
 var wil = new String('Wilber')
 wil.length // 6 
+
+Ele usa o String como wrapper object. Ele faz o wrapper na string, transformando em objeto, e daí o objeto 'Wilber' tem a propriedade length
